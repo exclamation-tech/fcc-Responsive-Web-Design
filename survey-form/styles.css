@@ -1,0 +1,58 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #60d394;
+  font-family: "Play", sans-serif;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+form {
+  margin: 5vh 5vw;
+  background: #ff9b85;
+  min-width: min-content;
+  text-align: left;
+  padding: 5vh 5vw;
+  border-radius: 5vmin;
+}
+label {
+  display: block;
+}
+.form-child {
+  margin: 2vh 2vw;
+}
+label {
+  margin: 1rem 0;
+}
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  margin: 0;
+  font-size: inherit;
+}
+textarea {
+  min-height: 4rem;
+}
+.text-input {
+  width: 100%;
+  height: 2rem;
+}
+.radio-button,
+.checkbox {
+  margin-right: 0.5rem;
+  min-height: 1rem;
+  min-width: 1rem;
+  display: inline-block;
+}
+button {
+  min-height: 3rem;
+  min-width: auto;
+  border: none;
+  background: #ffd97d;
+}

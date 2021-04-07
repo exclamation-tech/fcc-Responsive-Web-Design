@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Favorite Operating System</h1>
+      <p id="description">
+        Surveying users to see what their favorite operating system is.
+      </p>
+    </header>
+    <main>
+      <form action="" id="survey-form">
+        <div class="form-child">
+          <label for="name" id="name-label">Name: </label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            id="name"
+            class="text-input"
+            required
+          />
+          <label for="email" id="email-label">Email: </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            id="email"
+            class="text-input"
+            required
+          />
+        </div>
+        <div class="form-child">
+          <label for="operating-system"
+            >Select your main Desktop operating system</label
+          >
+          <select
+            class="text-input"
+            name="operating-system"
+            id="dropdown"
+            required
+          >
+            <option disabled selected value>Select Deskop OS</option>
+            <option value="chrome-os">Chrome OS</option>
+            <option value="mac-os">Mac OS</option>
+            <option value="windows">Linux Distro</option>
+            <option value="windows">Windows</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="rating" id="number-label"
+            >On a scale from 1-10, how satisfied are you with your current
+            operating system?</label
+          >
+          <input
+            type="number"
+            name="rating"
+            placeholder="Rating"
+            id="number"
+            min="1"
+            max="10"
+            class="text-input"
+            required
+          />
+          <p>Would you to reccomend your OS to a friend?</p>
+          <label
+            ><input
+              type="radio"
+              value="Yes"
+              name="user-reccomend"
+              class="radio-button"
+            />Yes</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="No"
+              name="user-reccomend"
+              class="radio-button"
+            />No</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="Maybe"
+              name="user-reccomend"
+              class="radio-button"
+            />Maybe</label
+          >
+        </div>
+        <div class="form-child">
+          <p>Which of the following describe you?</p>
+          <label
+            ><input
+              type="checkbox"
+              value="multiple-devices"
+              class="checkbox"
+            />I have multiple desktop devices.</label
+          >
+          <label
+            ><input type="checkbox" value="use-to-code" class="checkbox" />I use
+            my computer to code.</label
+          >
+          <label
+            ><input type="checkbox" value="use-to-art" class="checkbox" />I use
+            my computer to do art.</label
+          >
+          <label
+            ><input type="checkbox" value="use-for-school" class="checkbox" />I
+            use my computer for school.</label
+          >
+          <label
+            ><input type="checkbox" value="use-for-work" class="checkbox" />I
+            use my computer for work.</label
+          >
+        </div>
+        <div class="form-child">
+          <label for="more">Any additional info:</label>
+          <textarea
+            id="more"
+            name="more"
+            placeholder="Add more info here"
+            class="text-input"
+          ></textarea>
+        </div>
+        <div class="form-child">
+          <button id="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
