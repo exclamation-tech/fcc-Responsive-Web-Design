@@ -1,0 +1,19 @@
+header {
+  text-align: center;
+}
+body {
+  background: black;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+#image {
+  max-width: 100%;
+  display: block;
+}
+figure figcaption {
+  text-align: center;
+}
+body {
+  width: 50vw;
+  margin: auto;
+}
