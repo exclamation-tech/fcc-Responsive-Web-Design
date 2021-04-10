@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  align-items: stretch;
+  background-color: #292a36;
+  font-family: "Raleway", sans-serif;
+}
+nav {
+  padding: 2rem;
+  max-width: 30vh;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background-color: #21222c;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #50fa7b;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+a:hover {
+  text-decoration: underline #f1fa8c;
+}
+h1 {
+  color: #bd93f9;
+  font-size: 3rem;
+  pointer-events: none;
+}
+h2 {
+  color: #ff79c6;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+p {
+  color: #f8f8f2;
+  margin: 1rem 0;
+}
+main {
+  margin: 5vh 5vw;
+}
+a {
+  color: #8be9fd;
+}
+ol li {
+  list-style-type: none;
+}
+section {
+  display: flex;
+  flex-direction: column;
+}
+.codeline {
+  height: auto;
+  width: 100%;
+  background: #44475a;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: #ffb86c;
+  font-size: 1.2rem;
+  display: block;
+}
+.codetext {
+  background: #44475a;
+  font-size: 1.2rem;
+  color: #ffb86c;
+  height: 100%;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+}
+aside a {
+  text-decoration: none;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 2vh;
+  right: 2vw;
+}
+aside a:hover {
+  text-decoration: none;
+}
+aside {
+  display: none;
+}
+#mobile-title {
+  display: none;
+  color: #bd93f9;
+  font-size: 3rem;
+  pointer-events: none;
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    max-width: 100vw;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    background: #21222c50;
+    display: none;
+  }
+  aside {
+    display: block;
+  }
+  #exit {
+    display: none;
+  }
+  nav:target {
+    display: block;
+  }
+  nav:target ~ #hamburger {
+    display: none;
+  }
+  nav:target + #exit {
+    display: block;
+  }
+  #mobile-title {
+    display: block;
+  }
+}
