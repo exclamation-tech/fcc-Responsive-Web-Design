@@ -1,0 +1,53 @@
+/* ./src/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+
+* {
+  font-family: "Roboto Mono", monospace;
+}
+div {
+  overflow: auto;
+}
+#preview h1 {
+  @apply text-4xl font-bold;
+}
+#preview h2 {
+  @apply text-3xl font-bold;
+}
+#preview h3 {
+  @apply text-2xl font-bold;
+}
+#preview h4 {
+  @apply text-xl font-bold;
+}
+#preview h5 {
+  @apply text-lg font-bold;
+}
+#preview h6 {
+  @apply text-base font-bold;
+}
+#preview pre {
+  @apply bg-blue-200 overflow-x-auto;
+}
+#preview a {
+  @apply text-purple-900 font-semibold;
+}
+#preview a:hover {
+  @apply text-green-200;
+}
+#preview code {
+  @apply bg-blue-200 overflow-x-auto;
+}
+#preview blockquote {
+  @apply bg-blue-200 text-gray-500 pl-2 border-l-4 border-gray-700 ml-2;
+}
+#preview table {
+  @apply table-auto bg-blue-300 border-collapse;
+}
+#preview td,
+#preview th {
+  @apply px-4 py-2 border border-gray-700;
+}
