@@ -1,6 +1,6 @@
 # Tribute Page
 
-Mini timeline of Ai Weiwei.
+Mini timeline of Ai Weiwei, a chinese activist and artist.
 
 ## Screenshots
 
